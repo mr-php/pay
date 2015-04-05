@@ -24,4 +24,6 @@ Your app should now be running on [localhost:5000](http://localhost:5000/).
 - [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php)
 - [PHP on Heroku](https://devcenter.heroku.com/categories/php)
 - [Silex Documentation](http://silex.sensiolabs.org/documentation)
+- [Silex Twig Templates](http://silex.sensiolabs.org/doc/providers/twig.html)
 - [Stripe Documentation](https://stripe.com/docs)
+- [Stripe Custom Forms](https://stripe.com/docs/tutorials/forms)
