@@ -10,6 +10,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 $app->get('/', function(Request $request) use($app) {
     return $app['twig']->render('index.html', array(
+        'stripe_public' => getenv('STRIPE_PUBLIC'),
         'amount' => $request->get('amount'),
         'description' => $request->get('description'),
     ));
@@ -21,7 +22,7 @@ $app->get('/declined/', function(Request $request) use($app) {
     return $app['twig']->render('declined.html');
 });
 $app->post('/', function(Request $request) use($app) {
-    \Stripe\Stripe::setApiKey("sk_live_B6yYL3ec58vQCEPGB9gOu2Hl");
+    \Stripe\Stripe::setApiKey(getenv('STRIPE_PRIVATE'));
     try {
         $charge = \Stripe\Charge::create(array(
             'amount' => ceil($request->get('amount') * 100),

@@ -106,7 +106,7 @@
         $( function(){
             var $amount = $("#amount");
             var handler = StripeCheckout.configure({
-                key: 'pk_live_GiWkrt0Cr0iU98I7v6GvoKp8',
+                key: '{{stripe_public}}',
                 token: function(token) {
                     token.amount = $amount.val() * 100;
                     var $tokenInput = $('<input type="hidden" name="token" />').val(token.id);
