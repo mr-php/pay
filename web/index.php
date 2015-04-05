@@ -21,7 +21,7 @@ $app->get('/declined/', function(Request $request) use($app) {
     return $app['twig']->render('declined.html');
 });
 $app->post('/', function(Request $request) use($app) {
-    \Stripe\Stripe::setApiKey("sk_test_rWbC61qxrGhJ7JSrKSpUvvwS");
+    \Stripe\Stripe::setApiKey("sk_live_B6yYL3ec58vQCEPGB9gOu2Hl");
     try {
         $charge = \Stripe\Charge::create(array(
             'amount' => ceil($request->get('amount') * 100),
