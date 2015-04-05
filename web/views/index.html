@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <style>
         @media (min-width: 992px) {
-            .well { min-height: 310px; }
+            .well { min-height: 340px; }
         }
         </style>
     </head>
@@ -40,6 +40,8 @@
                                 <button id="payment" type="submit" class="btn btn-primary">Continue</button>
                             </div>
                         </form>
+                        <hr>
+                        <p class="help-block small">Payments are processed using <a href="https://stripe.com/" rel="nofollow" target="_blank">Stripe</a>.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -115,7 +117,7 @@
                     handler.open({
                         name: 'Mr PHP Payments',
                         description: $("#description").val(),
-                        //bitcoin: true,
+                        //bitcoin: true, // not supported in AU at 2015-04-05
                         amount: $amount.val() * 100
                     });
                 }
