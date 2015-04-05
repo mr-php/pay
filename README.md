@@ -1,8 +1,10 @@
 # MrPHP Payment Gateway
 
-Simple PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, deployed using Heroku.
+Simple PHP app that makes use of the following:
 
-For more info see [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
+- [Silex](http://silex.sensiolabs.org/) web framework.
+- [Stripe](https://stripe.com/) payment gateway.
+- Deployed using [Heroku](https://www.heroku.com/).
 
 ## Running Locally
 
@@ -19,6 +21,7 @@ Your app should now be running on [localhost:5000](http://localhost:5000/).
 
 ## Documentation
 
-For more information about using PHP on Heroku, see these Dev Center articles:
-
+- [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php)
 - [PHP on Heroku](https://devcenter.heroku.com/categories/php)
+- [Silex Documentation](http://silex.sensiolabs.org/documentation)
+- [Stripe Documentation](https://stripe.com/docs)
