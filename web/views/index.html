@@ -137,7 +137,7 @@
                 }
             });
             document.getElementById('payment').addEventListener('click', function(e) {
-                if (Number($amount.val()) > 1) {
+                if (Number($amount.val()) >= 1) {
                     handler.open({
                         name: 'Mr PHP',
                         description: $("#description").val(),
