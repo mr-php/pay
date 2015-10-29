@@ -1,10 +1,11 @@
 # MrPHP Payment Gateway
 
-Simple PHP app that makes use of the following:
+PHP app that makes use of the following:
 
 - [Silex](http://silex.sensiolabs.org/) web framework.
 - [Stripe](https://stripe.com/) payment gateway.
-- Deployed using [Heroku](https://www.heroku.com/).
+- [PayPal](https://www.paypal.com/) payment gateway.
+- [Heroku](https://www.heroku.com/) deployment and hosting.
 
 ## Running Locally
 
@@ -27,3 +28,4 @@ Your app should now be running on [localhost:5000](http://localhost:5000/).
 - [Silex Twig Templates](http://silex.sensiolabs.org/doc/providers/twig.html)
 - [Stripe Documentation](https://stripe.com/docs)
 - [Stripe Custom Forms](https://stripe.com/docs/tutorials/forms)
+- [PayPal Buttons](https://www.paypal.com/webapps/mpp/get-started/buy-now-button)
